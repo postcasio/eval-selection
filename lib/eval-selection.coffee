@@ -22,7 +22,7 @@ inspectResult = (res) ->
   if typeof res is 'object'
     util.inspect res
   else
-    res.toString()
+    String(res)
 
 replaceSelectedText = (editor, cb) ->
   range = editor.getSelectedBufferRange()
