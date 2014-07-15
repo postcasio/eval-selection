@@ -6,5 +6,7 @@ Code is evalated in Atom, so be careful and don't run untrusted code.
 
 Default keybindings:
 
-alt-shift-j eval-selection:eval-as-javascript
-alt-shift-c eval-selection:eval-as-coffeescript
+Keybinding | Command
+--- | ---
+alt-shift-j | eval-selection:eval-as-javascript
+alt-shift-c | eval-selection:eval-as-coffeescript
