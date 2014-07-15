@@ -1,0 +1,19 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  '.overlayer':
+    'Eval Selection':
+      'As JavaScript': 'eval-selection:eval-as-javascript'
+      'As CoffeeScript': 'eval-selection:eval-as-coffeescript'
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Eval Selection'
+      'submenu': [
+        { 'label': 'As JavaScript', 'command': 'eval-selection:eval-as-javascript' }
+        { 'label': 'As CoffeeScript', 'command': 'eval-selection:eval-as-coffeescript' }
+      ]
+    ]
+  }
+]

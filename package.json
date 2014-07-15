@@ -1,0 +1,19 @@
+{
+  "name": "eval-selection",
+  "main": "./lib/eval-selection",
+  "version": "0.0.0",
+  "description": "Replaces the selected text with its evaluation as either JavaScript or CoffeeScript.",
+  "activationEvents": [
+    "eval-selection:eval-as-coffeescript",
+    "eval-selection:eval-as-javascript"
+  ],
+  "repository": "https://github.com/postcasio/eval-selection",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+    "coffee-script": "^1.7.1",
+    "loophole": "^1.0.0"
+  }
+}
