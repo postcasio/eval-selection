@@ -1,6 +1,6 @@
-{ allowUnsafeEval } = require 'loophole'
-coffee = require 'coffee-script'
-util = require 'util'
+allowUnsafeEval = null
+coffee = null
+util = null
 
 evalAsCoffeeScript = (editor) ->
   replaceSelectedText editor, (text) ->
@@ -33,6 +33,11 @@ replaceSelectedText = (editor, cb) ->
 
 module.exports =
   activate: (state) ->
+    util = require 'util'
+    { allowUnsafeEval } = require 'loophole'
+    path = require 'path'
+    coffee = require path.join atom.packages.resourcePath, 'node_modules', 'coffee-script'
+
     atom.workspaceView.eachEditorView (editorView) ->
       editorView.command 'eval-selection:eval-as-coffeescript', ->
         evalAsCoffeeScript(editorView.getEditor())
