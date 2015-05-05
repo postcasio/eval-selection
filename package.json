@@ -3,10 +3,9 @@
   "main": "./lib/eval-selection",
   "version": "0.5.2",
   "description": "Replaces the selected text with its evaluation as either JavaScript or CoffeeScript.",
-  "activationEvents": [
-    "eval-selection:eval-as-coffeescript",
-    "eval-selection:eval-as-javascript"
-  ],
+  "activationCommands": {
+    "atom-workspace": ["eval-selection:eval-as-coffeescript", "eval-selection:eval-as-javascript"]
+  },
   "repository": "https://github.com/postcasio/eval-selection",
   "license": "MIT",
   "engines": {
