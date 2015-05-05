@@ -1,7 +1,7 @@
 {
   "name": "eval-selection",
   "main": "./lib/eval-selection",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Replaces the selected text with its evaluation as either JavaScript or CoffeeScript.",
   "activationCommands": {
     "atom-workspace": [
