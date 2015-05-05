@@ -1,6 +1,6 @@
 # See https://atom.io/docs/latest/creating-a-package#menus for more details
 'context-menu':
-	'.overlayer': [
+	'atom-text-editor': [
 		{
 			label: 'Eval Selection'
 			submenu: [
@@ -22,4 +22,3 @@
 		]
 	}
 ]
-
